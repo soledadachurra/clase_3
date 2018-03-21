@@ -1,0 +1,101 @@
+body{
+	background:rgb(220,220,240);
+	color:#555;
+font-family: 'IBM Plex Mono', monospace;
+padding: 0.5rem 5rem 0.2rem 0.51rem;
+}
+
+/* un comentario en CSS se escribe de esta manera */
+
+a{color:hsl(0, 30%, 0%);}
+
+:hover{transition:  ease all 1s;}
+
+a:hover{color:hsl(0, 100%, 50%);}
+nav {
+	background: rgba(0,0,255,0.2);
+	padding: 0.5rem;
+}
+
+div.container{
+	margin:5rem;
+	position: relative;
+}
+
+nav ol li {
+	font-size: 100%
+}
+nav ol li a{
+	color: blue;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	transform: translate(0, -10px) rotate(180deg);
+	position:absolute;
+	right:0;
+	top:0;
+}
+h3{font-family: 'Indie Flower', cursive;
+color: pink;}
+
+@media screen and (max-width: 1024px){
+	h2{display:none;}
+}
+
+@keyframes espaciado {
+	from {letter-spacing: 0.01rem;color: red}
+	to {letter-spacing: 0.1rem;color:green}
+}
+
+h4:hover {
+	animation-name: espaciado;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+figure{
+	background:rgba(255,255,255,.9);
+	padding:7rem;
+	margin:1rem 0 2rem 0;
+	box-shadow: 0 0 3px rgba(0,0,0,.1);
+}
+
+figure img{
+	width: 100%;
+	height:auto;
+	filter:grayscale(100%);
+}
+
+figure img:hover{
+	width: 100%;
+	height:auto;
+	filter:invert(100%);
+}
+
+figcaption{
+	padding:0.5rem;
+	font-size: 90%;
+	letter-spacing: 0.01rem;
+}
+
+hr{
+	border:3px solid #ddd;
+}
+
+svg{
+	border:5px solid #fff;
+}
+
+s, del{
+	background:rgba(0,0,0,.8);
+	color:rgba(0,0,0,1);
+	text-decoration: none;
+}
+
+ins{
+	font-weight: bold;
+	text-decoration: none;
+}

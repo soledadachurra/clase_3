@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Lo primero es indicar la codificación de caracteres utilizada-->
+	<meta charset="utf-8">
+	<!-- Luego los demás elementos meta, con sus atributos name y content -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Nunca olvidar el título que se desplegará en la peseña del navegador-->
+	<title>Hola mundo!</title>
+	<!-- Podemos vincular un favicon -->
+	<link rel="icon" type="image/png" href="favicon.png">
+	<!-- Podemos vincular una o varias hojas de estilo CSS -->
+	<link rel="stylesheet" href="estilo.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- Podemos incluir, directamente, algunas reglas de estilo CSS -->
+
+	<script src="javascript.js"></script>
+
+</head>
+<body>
+	<!--primero una DIVisión. Noten que se cierra en la antepenúltima línea-->
+	<div class="container">
+		<!--ahora un headER, con ER al final, y su lugar es el body-->
+		<header>
+		<!--aquí pondremos un par de encabezados, uno de primero nivel y otro de segundo-->
+			<h1>SOLEDAD ACHURRA MONTES</h1>
+			<h2>Este es un encabezado de segundo nivel</h2>
+		</header>
+		<!--este es un espacio para la NAVegación-->
+		<nav>
+			<ol>
+				<li><a href="#primero">Opción numero uno</a></li>
+				<li><a href="#segundo">Opción numero dos</a></li>
+				<li><a href="#tercero">Tercer artículo</a></li>
+			</ol>
+		</nav>
+		<!--ahora vamos por lo principal-->
+		<main>
+			<!-- vamos a abrir una sección, que contendrá 3 artículos-->
+			<section>
+				<!--noten como cada artículo repite la estructura header, section, footer-->
+				<article id="primero">
+					<header>
+						<h3>1. Esto es un encabezado de tercer nivel para el primer artículo</h3>
+					</header>
+					<section>
+						<p>Esto es un párrafo. Los párrafos no tienen niveles, por lo que nunca encontrarán un <code>&lt;p1&gt;…&lt;/p1&gt;</code> como sí podrían encontrar desde <code>&lt;h1&gt;…&lt;/h1&gt;</code> hasta <code>&lt;h6&gt;…&lt;/h6&gt;</code>.</p>
+						<p>En lo que sigue inmediatamente usaré los elementos <code>&lt;figure&gt;…&lt;/figure&gt;</code>, <code>&lt;video&gt;…&lt;/video&gt;</code> y <code>&lt;audio&gt;…&lt;/audio&gt;</code>. Los archivos estarán dentro de una carpeta de nombre <em>media</em>.</p>
+						<h4>1.1. &lt;figure&gt;…&lt;/figure&gt;</h4>
+						<p>Un elemento figure puede contener un elemento <abbr title="image">img</abbr> y además un elemento figcaption</p>
+						<figure>
+							<img src="media/end.jpg" alt="Alternativa para cuando no se vea la imagen">
+							<figcaption>The End of the F***ing World es una serie de televisión británica, basada en la novela gráfica <a href="http://www.fantagraphics.com/teotfw-en/" target="_blank" title="Graphic Novels :: The End of the Fucking World">The End of the Fucking World por Charles S. Forsman</a>.</figcaption>
+						</figure>
+						<h4>1.2. &lt;video&gt;…&lt;/video&gt;</h4>
+						<p>Un elemento video debe contener opciones de <abbr title="source">src</abbr>, <a href="https://www.w3schools.com/tags/tag_video.asp" target="_blank">para evitar problemas de compatibilidad del formato de video con algunos navegadores</a>. También debe tener un mensaje para avisarle a los navegadores más viejos que ni siquiera están entendiendo el elemento video.</p>
+						<video controls>
+							<source src="media/el_video.webm" type="video/webm">
+							<source src="media/el_video.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<h4>1.3. &lt;audio&gt;…&lt;/audio&gt;</h4>
+						<p>Lo mismo pasa con el elemento audio. Debe contener opciones de <abbr title="source">src</abbr>, <a href="https://www.w3schools.com/tags/tag_audio.asp" target="_blank">para evitar problemas de compatibilidad del formato de audio con algunos navegadores</a>. También debe tener un mensaje para avisarle a los navegadores más viejos que ni siquiera están entendiendo el elemento audio.</p>
+						<audio controls>
+							<source src="media/el_audio.ogg" type="audio/ogg">
+							<source src="media/el_audio.mp3" type="audio/mpeg">
+							Un aviso, por si las moscas: Tu navegador es muy viejo, no entiende lo que es un elemento audio.
+						</audio>
+					</section>
+					<footer>
+						<p>Este es el pie de un artículo súper multimedia.</p>
+						<hr />
+					</footer>
+				</article>
+				<!--noten como cada artículo repite la estructura header, section, footer-->
+				<article id="segundo">
+					<header>
+						<h3>2. Esto es un encabezado de tercer nivel para el segundo artículo</h3>
+					</header>
+					<section>
+						<p>En lo que sigue inmediatamente usaré los elementos <code>&lt;table&gt;…&lt;/table&gt;</code>, <code>&lt;dl&gt;…&lt;/dl&gt;</code>, <code>&lt;blockquote&gt;…&lt;/blockquote&gt;</code>, además de <code>&lt;del&gt;…&lt;/del&gt;</code> e <code>&lt;ins&gt;…&lt;/ins&gt;</code>.
+						<h4>2.1. &lt;table&gt;…&lt;/table&gt;</h4>
+						<p>Las tablas tienen filas (table row: tr) y las filas tienen celdas con datos (table data: td). Algunas celdas pueden ser encabezados (table heading: th)</p>
+						<table>
+							<tr>
+								<th>Nombres</th>
+								<th>Apellidos</th>
+							</tr>
+							<tr>
+								<td>SOLEDAD MARÍA JESÚS</td>
+								<td>ACHURRA MONTES</td>
+							</tr>
+							<tr>
+								<td>MARIA IGNACIA</td>
+								<td>ADELL AGUIRRE</td>
+							</tr>
+							<tr>
+								<td>DAVID ESTEBAN</td>
+								<td>ALARCON FLORES</td>
+							</tr>
+						</table>
+						<h4>2.2. &lt;dl&gt;…&lt;/dl&gt;</h4>
+						<p>Las listas de descripciones (dl) puede contener uno o varios término a describir (dt) y sus respectivas descripciones (dd):</p>
+						<dl>
+							<dt>Vector</dt>
+							<dd>1. m. Agente que transporta algo de un lugar a otro. U. t. c. adj.</dd>
+							<dd>2. m. Biol. Ser vivo que puede transmitir o propagar una enfermedad.</dd>
+							<dd>3. m. Bioquím. Fragmento de ácido desoxirribonucleico que puede unir otro fragmento ajeno y transferirlo al genoma de otros organismos.</dd>
+							<dd>4. m. Fil. Toda acción proyectiva que tiene cualidad e intensidad variables.</dd>
+							<dd>5. m. Fís. Toda magnitud en la que, además de la cuantía, hay que considerar el punto de aplicación, la dirección y el sentido. Las fuerzas son vectores.</dd>
+						</dl>
+						<h4>2.3. &lt;blockquote&gt;…&lt;/blockquote&gt;</h4>
+						<p>Lo que sea contenido en este elemento corresponde a un texto citado. Si nos evitamos malas traducciones, nos evitamos confundirlo con el elemento <code>&lt;cite&gt;…&lt;/cite&gt;</code>, que también puede ser un atributo <code>…cite=""</code>, y sirve para hacer referencia al trabajo original. Donde no habría confusión sería en el uso de <code>&lt;q&gt;…&lt;/q&gt;</code>, con el que podríamos indicar una cita dentro de un párrafo.</p>
+						<blockquote cite="https://elpais.com/cultura/2018/03/06/babelia/1520352987_936609.html">Una luz seca envuelve a Chomsky. Después de 60 años dando lecciones en el Massachusetts Institute of Technology (MIT), el profesor se ha venido a vivir a los confines del desierto de Sonora. En Tucson, a más de 4.200 kilómetros de Boston, ha abierto casa y estrenado despacho en el Departamento de Lingüística de la Universidad de Arizona.</blockquote>
+						<h4>2.4. &lt;s&gt;…&lt;/s&gt;, &lt;del&gt;…&lt;/del&gt; e &lt;ins&gt;…&lt;/ins&gt;</h4>
+						<p>Sirven para hacer ajustes en el documento (con S marco contenidos que ya no son precisos o que ya no son relevantes, con DEL hago evidente la eliminación de un contenido y con INS hago evidente una adición al documento), como se podría hacer para: "estoy <s>felizmente</s> <del>casado</del> <ins>separado</ins>".</p>
+					</section>
+					<footer>
+						<p>Este es el pie de un artículo súper textual.</p>
+						<hr />
+					</footer>
+				</article>
+				<!--noten como cada artículo repite la estructura header, section, footer-->
+				<article id="tercero">
+					<header>
+						<h3>3. Esto es un encabezado de tercer nivel para el tercer artículo</h3>
+					</header>
+					<section>
+						<p>Ya hemos revisado suficiente, así que juguemos un rato con lo que nos permite hacer el <a href="https://www.w3schools.com/graphics/svg_examples.asp" target="_blank" title="SVG Examples">elemento SVG</a></p>
+						<svg width="300" height="300" style="background:#eee; font-family: Helvetica, Arial, sans-serif; font-size:24px;">
+							<circle cx="150" cy="150" r="90" stroke="#ccc" stroke-width="1" fill="#bbb" />
+							<circle cx="125" cy="125" r="10" fill="#000" />
+							<circle cx="175" cy="125" r="10" fill="#000" />
+							<text x="139" y="175" fill="black">º º</text>
+							<text x="140" y="200" fill="black" transform="rotate(90 143,200)">D</text>
+						</svg>
+					</section>
+					<footer>
+						<p>Este es el pie de un artículo para relajarse.</p>
+						<hr />
+					</footer>
+				</article>
+			</section>
+		</main>
+		<!--aunque la etiqueta diga lateral, no se pondrá automáticamente al lado… eso es trabajo de CSS-->
+		<aside>
+			<p>Acá tendría que poner alguna nota secundaria, pero con importancia suficiente como para justificar tenerla a la vista, laterlamente.</p>
+		</aside>
+		<!--y con esto terminamos-->
+		<footer>
+			<p>Este es un pie de página. Llegamos al final de lo que teníamos que revisar hoy.</p>
+			<address>Aquí puedes ingresar tus datos de contacto como autor de esta página, intenta con una dirección de <a href="mailto:correo@correo.com">correo</a></address>
+		</footer>
+		<!--no olviden dejar cerrados div, body y html-->
+	</div>
+</body>
+</html>
